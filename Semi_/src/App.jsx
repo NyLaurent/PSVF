@@ -3,6 +3,7 @@ import { useState } from 'react'
 // import './App.css'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
+import News from './Components/News'
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <Navbar />
     
     <About />
+    <News/>
    </div>
     
     
