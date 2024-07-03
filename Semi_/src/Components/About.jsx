@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div>
             <div className='flex justify-center'>
-            <div className='w-[700px] h-[58px] bg-[white] shadow-lg relative bottom-6 rounded-lg'>
+            <div className='w-[700px] h-[58px] bg-[white] shadow-2xl relative bottom-6 rounded-lg'>
             <ul className='flex justify-evenly pt-3'>
                 <li className='flex gap-2.5 '><li><FaCircleCheck className='text-[#325AAB]'/></li> Ordinary level</li>
                 <li className='flex gap-2.5'> <li><FaCircleCheck className='text-[#325AAB]'/></li>Advanced level</li>
@@ -107,7 +107,7 @@ const About = () => {
                 <p className='font-bold text-1.5xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
             </div><br />
 
-            <div className='flex flex-row justify-evenly'>
+            <div className='flex flex-row justify-evenly flex-wrap'>
                 <div className='w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md'>
                 <MdOutlineFlag className='text-6xl text-[#325AAB]'/>
                     <h1 className='text-2xl font-bold'>Mission</h1><br />
@@ -133,7 +133,10 @@ const About = () => {
                       ultricies sed, dolor.</p>
                 </div>
                
-            </div>
+            </div> <br /><br />
+            <div>dsghfsjahfjahkj</div>
+
+            
            
        
         </div>
