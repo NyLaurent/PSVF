@@ -133,11 +133,7 @@ const About = () => {
                       ultricies sed, dolor.</p>
                 </div>
                
-            </div> <br /><br />
-            <div>dsghfsjahfjahkj</div>
-
-            
-           
+            </div>
        
         </div>
     );

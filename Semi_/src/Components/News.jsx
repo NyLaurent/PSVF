@@ -108,6 +108,52 @@ const News = () => {
                 <p className='font-bold text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli <br />
                 Lorem ipsum dolor sit amet</p>
             </div><br />
+            <br />
+
+            <form action="">
+                <div className='flex justify-center gap-12'>
+                <div className="mb-4">
+          <input
+            type="text"
+            className="mt-1 p-2 border border-gray-300 rounded w-[400px]"
+            placeholder="Full names"
+          />
+        </div>
+        <div className=''>
+        <input
+            type="text"
+            className="mt-1 p-2 border border-gray-300 rounded w-[400px]"
+            placeholder="Email adress"
+          />
+        </div>
+                </div>
+
+                <div className='flex justify-center'>
+                <input
+            type="text"
+            className="mt-1 p-2 border border-gray-300 rounded w-[850px]"
+            placeholder="Email adress"
+          />
+                </div><br />
+
+                <div className='flex justify-center'>
+                <textarea
+            id="textBox"
+            className="mt-1 p-2 border border-gray-300 rounded w-[850px] h-[200px]"
+            rows="4"
+            placeholder="Enter additional information"
+          ></textarea>
+                </div><br />
+                <div className='flex justify-center'>
+                <button
+            type="submit"
+            className="px-4 py-2 w-[850px] bg-blue-500 text-white font-semibold rounded shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          >
+            Submit
+          </button>
+                </div>
+      
+      </form><br /><br /><br /><br />
            
     </div>
 
