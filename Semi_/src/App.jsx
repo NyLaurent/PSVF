@@ -7,17 +7,18 @@ import About from './Components/About'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <div>
-      <Navbar/>
-      <About></About>
+   <div>
+    <Navbar />
     
-
-    </div>
+    <About />
+   </div>
     
-  )
-}
+    
+    
+    );
+    }
 
 export default App
+

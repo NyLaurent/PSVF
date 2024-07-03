@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import { FaXmark, FaPhoneAlt, FaBars } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { Link } from 'react-scroll';
-import backgroundImage from '../assets/gate2.png';
+import backgroundImage from '../assets/gate2.png'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,16 +23,17 @@ const Navbar = () => {
     return (
         <div className='relative'>
             {/* Background Image */}
-            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover fixed top-0 left-0 z-0" />
+            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover  " />
 
             {/* Content Overlay */}
-            <div className='absolute object-cover flex items-center justify-center w-full h-screen text-white flex-col'>
+            <div className='absolute top-5 flex items-center justify-center w-full h-screen text-white flex-col'>
                 <div className='text-center'>
                     <h1 className='text-4xl md:text-6xl sm:text-4xl font-bold mb-4'>
                         Welcome to <br className="sm:hidden" /> 
-                        <span className='text-6xl md:text-7xl sm:text-5xl text-white'>
+                        <span className='text-6xl md:text-7xl sm:text-5xl text-blue-200'>
                             Petit Seminaire <br /> Virgo Fidelis de Butare
                         </span>
+
                     </h1>
                     <h2 className='text-center justify-center pt-5 text-4xl '>PARAVI LUCERNAM CHRISTO MEO</h2>
                 </div>
@@ -39,9 +42,9 @@ const Navbar = () => {
                     <li>Je prépare une lampe pour mon Christ</li>
                 </div>
                 <div className='flex relative top-24 justify-center align-center'>
-                    <a href="#" className="inline-block px-7 py-4 bg-[#325AAB] text-white font-semibold rounded-sm shadow-md ">
-                        Apply Now
-                    </a>
+                <a href="#" className="inline-block px-7 py-4 bg-[#325AAB] text-white font-semibold rounded-sm  shadow-md ">
+            Apply Now
+        </a>
                 </div>
             </div>
 
