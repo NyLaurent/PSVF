@@ -4,6 +4,7 @@ import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import backgroundImage from '../assets/gate2.png'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,22 +21,73 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='bg-white md:px-14 p-4 max-w-screen-2xl border-b mx-auto text-primary fixed top-0 right-0 left-0 z-50 cursor-pointer'>
-            <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
-                <div className='flex space-x-14 items-center'>
-                    <a href="/" className='text-3xl font-semibold flex items-center space-x-3 text-primary'>
-                        <img src={logo} alt="" className='w-12 inline-block items-center' />
-                    </a>
-                    <ul className='md:flex space-x-12 hidden'>
+        <div className='relative'>
+            {/* Background Image */}
+            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover fixed top-0 left-0 z-0" />
+
+            {/* Content Overlay */}
+            <div className='absolute object-cover flex items-center justify-center w-full h-screen text-white'>
+                <div className='text-center'>
+                    <h1 className='text-4xl md:text-6xl sm:text-4xl font-bold mb-4'>
+                        Welcome to <br className="sm:hidden" /> 
+                        <span className='text-6xl md:text-7xl sm:text-5xl text-white'>
+                            Petit Seminaire <br /> Virgo Fidelis de Butare
+                        </span>
+                    </h1>
+                </div>
+            </div>
+
+            {/* Navbar */}
+            <nav className='bg-transparent md:px-14 p-4 w-full fixed top-0 z-50'>
+                <div className='text-lg container mx-auto flex justify-between items-center font-medium'>
+                    <div className='flex space-x-14 items-center'>
+                        <a href="/" className='text-3xl font-semibold flex items-center space-x-3 text-white'>
+                            <img src={logo} alt="" className='w-12 inline-block items-center' />
+                        </a>
+                        <ul className='md:flex space-x-12 hidden'>
+                            {navItems.map(({ link, path }) => (
+                                <li key={link}>
+                                    <Link
+                                        activeClass='active'
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        className='block text-white'
+                                        to={path}
+                                    >
+                                        {link}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className='space-x-12 hidden md:flex items-center'>
+                        <a href="/" className='hidden lg:flex items-center text-white hover:text-secondary'>
+                            <FaPhoneAlt className='mr-2' />Contact us
+                        </a>
+                    </div>
+
+                    <div className='md:hidden'>
+                        <button onClick={toggleMenu} className='text-white text-xl focus:outline-none focus:text-gray-300'>
+                            {isMenuOpen ? <FaXmark className='w-6 h-6 text-black' /> : <FaBars className='w-6 h-6 text-white' />}
+                        </button>
+                    </div>
+                </div>
+
+                {/* Responsive Menu */}
+                <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed top-16 right-0 left-0 z-50 space-y-4 px-4 pt-24 pb-5 bg-secondary`}>
+                    <ul className='flex flex-col space-y-4'>
                         {navItems.map(({ link, path }) => (
                             <li key={link}>
                                 <Link
                                     activeClass='active'
                                     spy={true}
                                     smooth={true}
-                                    offset={-100}
-                                    className='block hover:text-gray-300'
+                                    offset={-80}
+                                    className='block text-blue-500 hover:text-gray-300'
                                     to={path}
+                                    onClick={toggleMenu}
                                 >
                                     {link}
                                 </Link>
@@ -43,42 +95,9 @@ const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-
-                <div className='space-x-12 hidden md:flex items-center'>
-                    <a href="/" className='hidden lg:flex items-center hover:text-secondary'>
-                        <FaPhoneAlt className='mr-2' />Contact us
-                    </a>
-                </div>
-
-                <div className='md:hidden'>
-                    <button onClick={toggleMenu} className='text-white text-xl focus:outline-none focus:text-gray-300'>
-                        {isMenuOpen ? <FaXmark className='w-6 h-6 text-black' /> : <FaBars className='w-6 h-6 text-black' />}
-                    </button>
-                </div>
-            </div>
-
-            {/* Responsive Menu */}
-            <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed top-5 right-0 left-0 z-50 space-y-4 px-4 pt-24 pb-5 bg-secondary`}>
-                <ul className='flex flex-col space-y-4'>
-                    {navItems.map(({ link, path }) => (
-                        <li key={link}>
-                            <Link
-                                activeClass='active'
-                                spy={true}
-                                smooth={true}
-                                offset={-80}
-                                className='block text-[#325AAB] hover:text-gray-300'
-                                to={path}
-                                onClick={toggleMenu}
-                            >
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     );
-}
+};
 
 export default Navbar;
