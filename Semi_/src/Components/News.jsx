@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const News = () => {
   return (
-    <div className="p-4">
+    <div className="p-4" id='about'>
       <div className='text-center mb-8'>
         <h1 className='text-[#325AAB] font-extrabold text-2xl'>NEWS & ARTICLES</h1><br />
         <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
@@ -47,7 +47,7 @@ const News = () => {
         <h1 className='text-[#325AAB] font-extrabold text-2xl'>NEWS & ARTICLES</h1><br />
         <p className='font-bold text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli <br /> Lorem ipsum dolor sit amet</p>
       </div>
-
+<div id='pricing'>
       <form>
         <div className='flex flex-col md:flex-row justify-center gap-12 mb-4'>
           <input type="text" className="mt-1 p-2 border border-gray-300 rounded w-full md:w-[400px]" placeholder="Full names" />
@@ -68,6 +68,7 @@ const News = () => {
           </button>
         </div>
       </form><br /><br /><br /><br />
+      </div>
     </div>
   )
 }

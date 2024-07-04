@@ -8,7 +8,7 @@ import { MdOutlineFlag } from 'react-icons/md'
 
 const About = () => {
     return (
-        <div className="px-4">
+        <div className="px-4" id='feature'>
             <div className='flex justify-center'>
                 <div className='w-full sm:w-[700px] h-[58px] bg-white shadow-2xl relative bottom-6 rounded-lg'>
                     <ul className='flex flex-wrap justify-evenly pt-3'>

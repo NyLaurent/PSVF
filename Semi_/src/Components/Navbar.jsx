@@ -103,7 +103,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Responsive Menu */}
-                <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed top-16 right-0 left-0 z-50 space-y-4 px-4 pt-24 pb-5 bg-secondary`}>
+                <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} fixed top-16 right-4 left-4 z-50 space-y-4 px-4 pt-8 pb-5 bg-white rounded-md shadow-md border ${scrolled ? 'border-gray-300' : 'border-transparent'}`}>
                     <ul className='flex flex-col space-y-4'>
                         {navItems.map(({ link, path }) => (
                             <li key={link}>
