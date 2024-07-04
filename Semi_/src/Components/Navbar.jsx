@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -8,10 +8,27 @@ import backgroundImage from '../assets/gate2.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const navItems = [
         { link: "Home", path: "home" },
@@ -48,10 +65,10 @@ const Navbar = () => {
             </div>
 
             {/* Navbar */}
-            <nav className='bg-transparent px-4 md:px-14 w-full fixed top-0 z-50'>
-                <div className='container mx-auto flex justify-between items-center font-medium'>
+            <nav className={`px-4 md:px-14 w-full fixed top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#F1F3F8] rounded-md shadow-lg' : 'bg-transparent'}`}>
+                <div className='container mx-auto flex justify-between items-center font-medium py-2'>
                     <div className='flex space-x-4 md:space-x-14 items-center'>
-                        <a href="/" className='text-2xl md:text-3xl font-semibold flex items-center space-x-3 text-white'>
+                        <a href="/" className='text-2xl md:text-3xl font-semibold flex items-center space-x-3'>
                             <img src={logo} alt="Logo" className='w-8 md:w-12' />
                         </a>
                         <ul className='hidden md:flex space-x-8 lg:space-x-12'>
@@ -62,7 +79,7 @@ const Navbar = () => {
                                         spy={true}
                                         smooth={true}
                                         offset={-100}
-                                        className='block text-white hover:text-gray-300 cursor-pointer'
+                                        className={`block ${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 cursor-pointer`}
                                         to={path}
                                     >
                                         {link}
@@ -73,14 +90,14 @@ const Navbar = () => {
                     </div>
 
                     <div className='hidden md:flex space-x-4 lg:space-x-12 items-center'>
-                        <a href="/" className='flex items-center text-white hover:text-secondary'>
+                        <a href="/" className={`flex items-center ${scrolled ? 'text-black' : 'text-white'} hover:text-secondary`}>
                             <FaPhoneAlt className='mr-2' />Contact us
                         </a>
                     </div>
 
                     <div className='md:hidden'>
-                        <button onClick={toggleMenu} className='text-white text-xl focus:outline-none'>
-                            {isMenuOpen ? <FaXmark className='w-6 h-6 text-black' /> : <FaBars className='w-6 h-6' />}
+                        <button onClick={toggleMenu} className={`text-xl focus:outline-none ${scrolled ? 'text-black' : 'text-white'}`}>
+                            {isMenuOpen ? <FaXmark className='w-6 h-6' /> : <FaBars className='w-6 h-6' />}
                         </button>
                     </div>
                 </div>
