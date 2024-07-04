@@ -27,14 +27,15 @@ const News = () => {
       <div className='text-center mb-8'>
         <h1 className='text-[#325AAB] font-extrabold text-2xl'>LOREM IPSUM</h1><br />
         <p className='font-bold text-xl mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
-        <p>Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+        <p>Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,<br /> ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,<br />
+         varius a, semper congue, euismod non, mi.</p>
       </div>
 
       {[1, 2, 3, 4].map((num, index) => (
         <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} justify-around items-center mb-8`}>
           <div className='md:w-1/2 p-4'>
-            <h2 className='text-2xl font-bold text-[#325AAB]'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</h2>
-            <p className='font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolo</p>
+            <h2 className='text-2xl font-bold text-[#325AAB]'>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing eli</h2>
+            <p className='font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Sed non risus. Suspendisse lectus tortor, dignissim sit amet,<br /> adipiscing nec, ultricies sed, dolo</p>
           </div>
           <div className='md:w-1/4 text-center'>
             <h1 className='text-8xl font-extrabold text-[#c4c7cf]'>{`0${num}`}</h1>

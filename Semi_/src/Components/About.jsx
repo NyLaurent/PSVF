@@ -19,7 +19,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-evenly'>
+            <div className='flex flex-col lg:flex-row  gap-9 justify-evenly'>
                 <div className="flex justify-center lg:justify-start mb-8 lg:mb-0">
                     <img src={house} alt="" className='w-full lg:w-[700px] rounded-lg' />
                 </div>
@@ -27,12 +27,13 @@ const About = () => {
                     <h1 className='text-[#325AAB] font-extrabold text-4xl mb-4'>ABOUT US</h1>
                     <h3 className='font-bold text-2xl mb-4'>Get to know more about our seminary</h3>
                     <p className='mb-4'>
-                        Petit Seminare Saint Leon Kabgayi is a distinguished educational institution known for its commitment to academic excellence and holistic development. Located in Kabgayi, it has a rich history of nurturing students both academically and morally. The school fosters a conducive learning environment, encouraging intellectual growth and character formation.
-                    </p>
+                        Petit Seminare Saint Leon Kabgayi is a distinguished educational <br />institution known for its commitment to academic excellence and <br />holistic development. Located in Kabgayi, it has a rich history of <br />nurturing students both academically and morally. The school fosters a <br />conducive learning environment, encouraging intellectual growth and <br />character formation.
+                    </p><br /><br />
                     <p className='mb-8'>
-                        With a dedicated faculty and modern facilities, Petit Seminare Saint Leon Kabgayi is a beacon of educational quality, consistently producing well-rounded individuals who excel in various fields.
+                        With a dedicated faculty and modern facilities, Petit Seminare <br /> Saint Leon Kabgayi is a beacon of educational <br />
+                         quality, consistently producing well-rounded individuals <br />who excel in various fields.
                     </p>
-                    <a href="#" className="inline-block px-7 py-4 bg-[#325AAB] text-white font-semibold rounded-lg shadow-md flex items-center gap-2">
+                    <a href="#" className=" px-4 py-2 bg-[#325AAB] w-[200px] text-white font-semibold rounded-md shadow-md flex items-center gap-4  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                         Read more <FaArrowRight />
                     </a>
                 </div>
@@ -44,10 +45,10 @@ const About = () => {
                     <h3 className='font-bold text-xl mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                     <p className='mb-4'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
-                    </p>
+                    </p><br /><br />
                     <p className='mb-4'>
                         Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-                    </p>
+                    </p><br /><br />
                     <p>
                         Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
                     </p>
