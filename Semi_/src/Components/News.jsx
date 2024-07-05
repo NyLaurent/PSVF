@@ -1,4 +1,4 @@
-import React from 'react'
+
 import People from '../assets/people.png'
 import { FaArrowRight } from "react-icons/fa";
 

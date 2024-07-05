@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -38,7 +38,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='relative'>
+        <div className='relative' id='home'>
             {/* Background Image */}
             <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover" />
 
