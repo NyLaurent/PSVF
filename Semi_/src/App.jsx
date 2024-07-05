@@ -5,7 +5,8 @@
 // import About from './Components/About'
 // import News from './Components/News'
 // import Footer from './Components/Footer'
-import Apply from './Components/Apply';
+// import Apply from './Components/Apply'
+import History from './Components/History'
 
 
 
@@ -19,7 +20,8 @@ function App() {
     <About />
     <News/>
     <Footer/> */}
-    <Apply/>
+    {/* <Apply/> */}
+    <History/>
    </div>
     
     
