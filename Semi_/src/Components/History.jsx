@@ -121,7 +121,7 @@ const History = () => {
           <p className="text-white mt-4 md:pl-20 lg:pl-56">
             Get to know more about our Seminary
           </p>
-          <BsArrowDownCircleFill className="text-white text-3xl mt-8 mx-auto md:mx-0 hover:translate-y-2" />
+          <BsArrowDownCircleFill className='text-white text-3xl mt-8 mx-auto md:mx-66 hover:translate-y-2' />
         </div>
       </div><br />
       <div className='flex justify-center'>
