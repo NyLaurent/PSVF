@@ -127,6 +127,10 @@ const History = () => {
       <div className='flex justify-center'>
         <h1 className='text-2xl text-[#325AAB] font-extrabold'>
           A History of minor Seminary <br />
+
+
+
+          
           <span className=''> Saint-Leon</span>
         </h1>
       </div><br />
