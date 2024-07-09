@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaCircleCheck } from "react-icons/fa6";
 import house from '../assets/house.png'
 import { FaArrowRight } from "react-icons/fa";

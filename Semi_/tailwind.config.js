@@ -11,7 +11,7 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         '.text-stroke': {
-          '-webkit-text-stroke': '1px #1a75ff',
+          '-webkit-text-stroke': '1px #fff',
         },
         '.text-fill-transparent': {
           'color': 'transparent',

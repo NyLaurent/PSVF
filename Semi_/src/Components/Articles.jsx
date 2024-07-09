@@ -16,7 +16,7 @@ const Articles = () => {
         </div>
         <div className="absolute top-[70%] left-[10%] lg:left-[5%] text-center md:text-left">
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">
-            Saint Leon <span className="font-extrabold text-5xl md:text-6xl lg:text-7xl">News & Articles</span>
+            Saint Leon <span className="font-extrabold text-5xl md:text-6xl lg:text-7xl text-fill-transparent text-stroke">News & Articles</span>
           </h1>
         </div>
       </div>
@@ -70,7 +70,7 @@ const Articles = () => {
           </div>
         </div>
 
-        <div className='w-full md:w-2/5 h-[450px] border-4 border-red-200 px-8 rounded-sm'>
+        <div className='w-[500px]  md:w-[400px] h-[560px] border-4 border-[#80838a] px-8 rounded-md'>
           <div>
             <h1 className='font-bold text-2xl px-3'>More news</h1>
           </div>
