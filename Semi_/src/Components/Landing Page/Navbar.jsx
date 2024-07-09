@@ -1,10 +1,10 @@
 import  { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-scroll';
-import backgroundImage from '../assets/gate2.png';
+import backgroundImage from '../../assets/gate2.png';
 
 
 const Navbar = () => {

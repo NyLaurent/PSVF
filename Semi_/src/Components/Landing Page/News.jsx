@@ -1,5 +1,5 @@
 
-import People from '../assets/people.png'
+import People from '../../assets/people.png'
 import { FaArrowRight } from "react-icons/fa";
 
 const News = () => {

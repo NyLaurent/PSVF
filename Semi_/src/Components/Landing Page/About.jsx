@@ -1,9 +1,9 @@
 
 import { FaCircleCheck } from "react-icons/fa6";
-import house from '../assets/house.png'
+import house from '../../assets/house.png'
 import { FaArrowRight } from "react-icons/fa";
-import About1 from '../assets/about1.png';
-import About2 from '../assets/about2.png'
+import About1 from '../../assets/about1.png';
+import About2 from '../../assets/about2.png'
 import { MdOutlineFlag } from 'react-icons/md'
 
 const About = () => {
