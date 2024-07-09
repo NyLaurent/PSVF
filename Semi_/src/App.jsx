@@ -1,13 +1,11 @@
 
 
 // import './App.css'
-// import Navbar from './Components/Navbar'
-// import About from './Components/About'
-// import News from './Components/News'
-// import Footer from './Components/Footer'
-// import Apply from './Components/Apply'
-// import History from './Components/History'
-import Articles from './Components/Articles';
+import Navbar from './Components/Landing Page/Navbar'
+import About from './Components/Landing Page/About'
+import News from './Components/Landing Page/News'
+import Footer from './Components/Landing Page/Footer'
+
 
 
 
@@ -16,14 +14,13 @@ function App() {
   
   return (
    <div>
-    {/* <Navbar />
+    {/*these are one page */}
+     <Navbar />
     
     <About />
     <News/>
-    <Footer/> */}
-    {/* <Apply/> */}
-    {/* <History/> */}
-    <Articles></Articles>
+    <Footer/> 
+   
    </div>
     
     

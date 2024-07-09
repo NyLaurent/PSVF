@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from 'react-scroll';
 import backgroundImage from '../assets/gate2.png';
 
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
                 <div className='text-center'>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4'>
                         Welcome to <br className="sm:hidden" />
-                        <span className='text-5xl sm:text-6xl md:text-7xl text-blue-200'>
+                        <span className='text-5xl sm:text-6xl md:text-8xl text-blue-200 text-fill-transparent text-stroke'>
                             Petit Seminaire <br /> Virgo Fidelis de Butare
                         </span>
                     </h1>

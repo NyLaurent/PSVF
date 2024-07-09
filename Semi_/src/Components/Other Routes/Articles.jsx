@@ -1,7 +1,3 @@
-
-
-
-
 import gate from '../assets/article.png'
 import { IoCalendarNumber } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
@@ -123,13 +119,3 @@ const Articles = () => {
 }
 
 export default Articles
-
-
-
-
-
-
-
-
-
-
