@@ -7,6 +7,18 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-stroke': {
+          '-webkit-text-stroke': '1px #1a75ff',
+        },
+        '.text-fill-transparent': {
+          'color': 'transparent',
+        },
+      }
 
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
+}
