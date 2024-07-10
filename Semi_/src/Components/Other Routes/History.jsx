@@ -1,8 +1,8 @@
 import { BsArrowDownCircleFill } from 'react-icons/bs';
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
-import gate from '../assets/gate2.png';
-import Church from '../assets/gate2.png'
-import logo from '../assets/logo.png'
+import gate from '../../assets/gate2.png';
+import Church from '../../assets/gate2.png'
+import logo from '../../assets/logo.png'
 
 const History = () => {
   return (

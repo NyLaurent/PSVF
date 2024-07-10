@@ -1,7 +1,7 @@
-import gate from '../assets/article.png'
+import gate from '../../assets/article.png'
 import { IoCalendarNumber } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const Articles = () => {
   return (

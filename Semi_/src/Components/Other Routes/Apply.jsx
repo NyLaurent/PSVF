@@ -1,8 +1,8 @@
-import gate from '../assets/gate2.png';
+import gate from '../../assets/gate2.png';
 import { BsArrowDownCircleFill } from 'react-icons/bs';
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 import DragAndDrop from './dragDrop'
 
 

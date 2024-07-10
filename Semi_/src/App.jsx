@@ -1,10 +1,13 @@
 
+import Landing from './Components/Landing Page/Landing'
+import Apply from './Components/Other Routes/Apply'
+import Articles from './Components/Other Routes/Articles'
+import History from './Components/Other Routes/History'
+import {
+  createBrowserRouter,
+  RouterProvider
+}from 'react-router-dom';
 
-// import './App.css'
-// import Navbar from './Components/Landing Page/Navbar'
-// import About from './Components/Landing Page/About'
-// import News from './Components/Landing Page/News'
-// import Footer from './Components/Landing Page/Footer'
 
 
 
@@ -14,12 +17,7 @@ function App() {
   
   return (
    <div>
-    {/*these are one page */}
-     {/* <Navbar />
-    
-    <About />
-    <News/>
-    <Footer/>  */}
+    <Landing/>
    
    </div>
     
