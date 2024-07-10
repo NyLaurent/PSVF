@@ -1,9 +1,10 @@
 import gate from '../../assets/gate2.png';
 import { BsArrowDownCircleFill } from 'react-icons/bs';
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
-
+import { FaLongArrowAltLeft } from "react-icons/fa";
 import logo from '../../assets/logo.png'
 import DragAndDrop from './dragDrop'
+import {Link} from 'react-router-dom'
 
 
 
@@ -16,9 +17,15 @@ const Apply = () => {
         <div>
           <img src={gate} alt="" className="h-[350px] w-[100vw]" />
         </div>
+        <div className="absolute top-4 left-4 text-white">
+          <Link to={'/'}>
+          <FaLongArrowAltLeft className="text-3xl cursor-pointer" />
+          </Link>
+         
+        </div>
         <div className="absolute top-[30%] right-[10%] md:right-[15%] lg:right-[30%] text-center md:text-left">
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">
-            Apply to <span className="font-extrabold text-5xl md:text-6xl lg:text-7xl">Saint Leon</span>
+            Apply to <span className="font-extrabold text-fill-transparent text-stroke text-5xl md:text-6xl lg:text-7xl">Saint Leon</span>
           </h1>
           <p className="text-white mt-4 md:pl-20 lg:pl-56">
             Fill the application form
