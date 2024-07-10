@@ -1,6 +1,7 @@
 
 import People from '../../assets/people.png'
 import { FaArrowRight } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 const News = () => {
   return (
@@ -16,9 +17,9 @@ const News = () => {
             <img src={People} alt="" className="w-full md:w-auto" />
             <div className='w-full md:w-[420px] h-[150px] bg-[#F1F3F8] rounded-lg p-4 mt-4'>
               <h2 className='text-2xl font-bold'>Seminaire Saint-Leon student ranks TOP 10 in National Exam.</h2><br />
-              <a href="#" className="w-full md:w-40 h-11 bg-[#325AAB] text-white font-semibold rounded-lg shadow-md flex justify-center items-center">
+              <Link to={'/Articles'} className="w-full md:w-40 h-11 bg-[#325AAB] text-white font-semibold rounded-lg shadow-md flex justify-center items-center">
                 <span className='flex gap-4 items-center'>Read more <FaArrowRight /></span>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

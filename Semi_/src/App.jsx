@@ -9,6 +9,27 @@ import {
 }from 'react-router-dom';
 
 
+const router =createBrowserRouter([
+  {
+  path:'/',
+  element: <div><Landing></Landing></div>
+},
+{
+  path:'/Apply',
+  element: <div><Apply/></div>
+},
+{
+  path:'/Articles',
+  element: <div><Articles/></div>
+},
+{
+  path:'/History',
+  element: <div><History/></div>
+},
+
+])
+
+
 
 
 
@@ -17,7 +38,7 @@ function App() {
   
   return (
    <div>
-    <Landing/>
+    <RouterProvider router={router}/>
    
    </div>
     

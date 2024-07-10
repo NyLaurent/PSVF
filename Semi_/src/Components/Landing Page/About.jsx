@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import About1 from '../../assets/about1.png';
 import About2 from '../../assets/about2.png'
 import { MdOutlineFlag } from 'react-icons/md'
+import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
@@ -33,9 +34,9 @@ const About = () => {
                         With a dedicated faculty and modern facilities, Petit Seminare <br /> Saint Leon Kabgayi is a beacon of educational <br />
                          quality, consistently producing well-rounded individuals <br />who excel in various fields.
                     </p>
-                    <a href="#" className=" px-4 py-2 bg-[#325AAB] w-[200px] text-white font-semibold rounded-md shadow-md flex items-center gap-4  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    <Link to={'/History'} className=" px-4 py-2 cursor-pointer bg-[#325AAB] w-[200px] text-white font-semibold rounded-md shadow-md flex items-center gap-4  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                         Read more <FaArrowRight />
-                    </a>
+                    </Link>
                 </div>
             </div>
 

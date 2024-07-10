@@ -1,11 +1,11 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll'; // Renamed Link from react-scroll
+import { Link } from 'react-router-dom'; // Link from react-router-dom
 import backgroundImage from '../../assets/gate2.png';
-
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,9 +59,9 @@ const Navbar = () => {
                     <li>Je prépare une lampe pour mon Christ</li>
                 </div>
                 <div className='flex relative top-24 justify-center'>
-                    <a href="" className="inline-block px-5 py-3 sm:px-7 sm:py-4 bg-[#325AAB] text-white font-semibold rounded-sm shadow-md  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50    ">
+                    <Link to={'/Apply'} className="inline-block px-5 py-3 sm:px-7 sm:py-4 bg-[#325AAB] text-white font-semibold rounded-sm shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer">
                         Apply Now
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
                         <ul className='hidden md:flex space-x-8 lg:space-x-12'>
                             {navItems.map(({ link, path }) => (
                                 <li key={link}>
-                                    <Link
+                                    <ScrollLink
                                         activeClass='active'
                                         spy={true}
                                         smooth={true}
@@ -84,7 +84,7 @@ const Navbar = () => {
                                         to={path}
                                     >
                                         {link}
-                                    </Link>
+                                    </ScrollLink>
                                 </li>
                             ))}
                         </ul>
@@ -108,7 +108,7 @@ const Navbar = () => {
                     <ul className='flex flex-col space-y-4'>
                         {navItems.map(({ link, path }) => (
                             <li key={link}>
-                                <Link
+                                <ScrollLink
                                     activeClass='active'
                                     spy={true}
                                     smooth={true}
@@ -118,7 +118,7 @@ const Navbar = () => {
                                     onClick={toggleMenu}
                                 >
                                     {link}
-                                </Link>
+                                </ScrollLink>
                             </li>
                         ))}
                     </ul>
