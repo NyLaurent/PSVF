@@ -3,8 +3,8 @@ import logo from '../../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { Link as ScrollLink } from 'react-scroll'; // Renamed Link from react-scroll
-import { Link } from 'react-router-dom'; // Link from react-router-dom
+import { Link as ScrollLink } from 'react-scroll'; 
+import { Link } from 'react-router-dom'; 
 import backgroundImage from '../../assets/gate2.png';
 
 const Navbar = () => {
