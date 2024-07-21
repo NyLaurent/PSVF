@@ -148,7 +148,7 @@ const Apply = () => {
     {[1, 2, 3].map((num) => (
       <div key={num} className='text-center md:text-left mb-4 md:mb-0'>
         <h1 className='font-extrabold'>Lorem ipsum</h1>
-        <ul className='flex flex-col'>
+        <ul className='flex flex-col cursor-pointer'>
           <li>Lorem ipsum</li>
           <li>Lorem ipsum</li>
           <li>Lorem ipsum</li>
