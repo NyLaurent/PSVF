@@ -49,7 +49,7 @@ const Navbar = () => {
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4'>
                         Welcome to <br className="sm:hidden" />
                         <span className='text-5xl sm:text-6xl md:text-8xl text-blue-200 text-fill-transparent text-stroke'>
-                            Petit Seminaire <br /> Virgo Fidelis de Butare
+                            Petit Seminaire <br /> Saint Leon Kabgayi
                         </span>
                     </h1>
                     <h2 className='text-2xl sm:text-3xl md:text-4xl pt-5'>PARAVI LUCERNAM CHRISTO MEO</h2>
