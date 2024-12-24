@@ -5,11 +5,21 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import backgroundImage from '../../assets/newPics/1.jpg';
+import backgroundImage from '../../assets/newPics/gang.jpg';
+import secondImage from '../../assets/newPics/1.jpg';
+import thirdImage from '../../assets/newPics/group.jpg';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const backgroundImages = [
+        backgroundImage, // existing image
+        secondImage, // add your second image path
+        thirdImage, // add your third image path
+        // ... add more images as needed
+    ];
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -24,9 +34,14 @@ const Navbar = () => {
             }
         };
 
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+        }, 3000); // Change image every 5 seconds
+
         window.addEventListener('scroll', handleScroll);
 
         return () => {
+            clearInterval(interval);
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
@@ -41,7 +56,7 @@ const Navbar = () => {
     return (
         <div className='relative' id='home'>
             {/* Background Image */}
-            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover opacity-100" />
+            <img src={backgroundImages[currentImageIndex]} alt="Background" className="w-full h-screen object-cover opacity-100" />
 
             {/* Shadow Overlay */}
             <div className='absolute top-0 left-0 w-full h-screen bg-black opacity-40'></div>
