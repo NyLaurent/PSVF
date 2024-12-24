@@ -3,9 +3,9 @@ import logo from '../../assets/logo.png';
 import { FaXmark } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
-import { Link as ScrollLink } from 'react-scroll'; 
-import { Link } from 'react-router-dom'; 
-import backgroundImage from '../../assets/gate2.png';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import backgroundImage from '../../assets/newPics/1.jpg';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,14 +41,17 @@ const Navbar = () => {
     return (
         <div className='relative' id='home'>
             {/* Background Image */}
-            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover" />
+            <img src={backgroundImage} alt="Background" className="w-full h-screen object-cover opacity-100" />
+
+            {/* Shadow Overlay */}
+            <div className='absolute top-0 left-0 w-full h-screen bg-black opacity-40'></div>
 
             {/* Content Overlay */}
             <div className='absolute top-0 flex items-center justify-center w-full h-screen text-white flex-col'>
                 <div className='text-center'>
                     <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold mb-4'>
                         Welcome to <br className="sm:hidden" />
-                        <span className='text-5xl sm:text-6xl md:text-8xl text-blue-200 text-fill-transparent text-stroke'>
+                        <span className=' font-bold text-5xl sm:text-6xl md:text-8xl text-blue-200 text-fill-transparent text-stroke'>
                             Petit Seminaire <br /> Saint Leon Kabgayi
                         </span>
                     </h1>
