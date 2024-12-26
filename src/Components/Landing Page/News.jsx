@@ -1,10 +1,11 @@
 import People from '../../assets/people.png'
 import { FaArrowRight } from "react-icons/fa";
 import Gang from '../../assets/newPics/gang.jpg'
+import joy from '../../assets/newPics/joy.jpg'
 import { Link } from 'react-router-dom'
 
 const News = () => {
-  const images = [People, Gang, 'path/to/yet/another/image.png'];
+  const images = [People, Gang, joy];
 
   return (
     <div className="p-4" id='about'>
