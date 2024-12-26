@@ -2,7 +2,7 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import house from '../../assets/house.png'
 import { FaArrowRight } from "react-icons/fa";
-import About1 from '../../assets/about1.png';
+import About1 from '../../assets/newPics/sport.png';
 import About2 from '../../assets/about2.png'
 import { MdOutlineFlag } from 'react-icons/md'
 import {Link} from 'react-router-dom'
@@ -55,7 +55,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center lg:items-start gap-4">
-                    <img src={About1} alt="" className='w-full lg:w-[400px] mb-4' />
+                    <img src={About1} alt="" className='w-full  lg:w-[400px] mb-4' />
                     <img src={About2} alt="" className='w-full lg:w-[400px]' />
                 </div>
             </div>

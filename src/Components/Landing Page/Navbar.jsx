@@ -77,7 +77,7 @@ const Navbar = () => {
                     <li>Je prépare une lampe pour mon Christ</li>
                 </div>
                 <div className='flex relative top-24 justify-center'>
-                    <Link to={'/Apply'} className="inline-block px-5 py-3 sm:px-7 sm:py-4 bg-[#325AAB] text-white font-semibold rounded-sm shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer">
+                    <Link to={'/Apply'} className="inline-block px-5 py-3 sm:px-7 sm:py-4 bg-[#325AAB] text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer">
                         Apply Now
                     </Link>
                 </div>
