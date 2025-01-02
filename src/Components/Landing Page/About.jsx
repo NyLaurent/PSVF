@@ -62,8 +62,8 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR VALUES</h1>
-                <p className='font-bold text-xl'>We are committed to fostering a culture of excellence, integrity, and respect among our students.</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR JOURNEY</h1>
+                <p className='font-bold text-xl'>Celebrating over 50 years of fostering a culture of excellence, integrity, and respect among our students.</p>
             </div>
 
             <div className='w-full h-[150px] bg-[#325AAB] flex justify-evenly items-center mt-16'>
