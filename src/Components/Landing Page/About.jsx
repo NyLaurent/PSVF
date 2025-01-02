@@ -15,7 +15,7 @@ const About = () => {
                     <ul className='flex flex-wrap justify-evenly pt-3'>
                         <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' /> Ordinary level</li>
                         <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Advanced level</li>
-                        <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Lorem Ipsum</li>
+                        <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Preparatoire</li>
                     </ul>
                 </div>
             </div>
