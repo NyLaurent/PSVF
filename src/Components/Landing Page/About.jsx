@@ -14,7 +14,7 @@ const About = () => {
                     <ul className='flex flex-wrap justify-evenly pt-3'>
                         <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' /> Ordinary level</li>
                         <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Advanced level</li>
-                        <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Preparatoire</li>
+                        <li className='flex gap-2.5'><FaCircleCheck className='text-[#325AAB]' />Lorem Ipsum</li>
                     </ul>
                 </div>
             </div>
@@ -39,29 +39,31 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-evenly mt-16'>
-                <div className='lg:w-1/2 lg:pr-14 mb-8 lg:mb-0'>
-                    <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSION</h1>
-                    <h3 className='font-bold text-xl mb-4'>Empowering students through quality education</h3>
-                    <p className='mb-4'>
-                        Our mission is to provide a nurturing environment that fosters academic excellence and personal growth, developing well-rounded individuals prepared for future challenges. We believe in character development alongside academic achievement, instilling values of integrity, respect, and responsibility. Through innovative teaching methods and a dedicated faculty, we inspire a love for learning and a commitment to lifelong education.
-                    </p>
-                    <p className='mb-4'>
-                        Our commitment extends beyond the classroom, engaging with the community to promote social responsibility and active citizenship. We offer diverse extracurricular activities that encourage teamwork, leadership, and personal development, ensuring every student finds their passion while fostering a culture of inclusivity and respect.
-                    </p>
-                    <p>
-                        Our vision is to be a leading institution in holistic education, preparing students not just academically, but also socially and emotionally for the world ahead.
-                    </p>
-                </div>
-                <div className="flex flex-col items-center lg:items-start gap-4">
-                    <img src={About1} alt="" className='w-full  lg:w-[400px] mb-4' />
-                    <img src={About2} alt="" className='w-full lg:w-[400px]' />
+            <div className='bg-gray-50 p-4 rounded-md mt-8'>
+                <div className='flex flex-col lg:flex-row justify-evenly'>
+                    <div className='lg:w-1/2 lg:pr-14 mb-8 lg:mb-0'>
+                        <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSION</h1>
+                        <h3 className='font-bold text-xl mb-4'>Empowering students through quality education</h3>
+                        <p className='mb-4'>
+                            Our mission is to provide a nurturing environment that fosters academic excellence and personal growth, developing well-rounded individuals prepared for future challenges. We believe in character development alongside academic achievement, instilling values of integrity, respect, and responsibility. Through innovative teaching methods and a dedicated faculty, we inspire a love for learning and a commitment to lifelong education.
+                        </p>
+                        <p className='mb-4'>
+                            Our commitment extends beyond the classroom, engaging with the community to promote social responsibility and active citizenship. We offer diverse extracurricular activities that encourage teamwork, leadership, and personal development, ensuring every student finds their passion while fostering a culture of inclusivity and respect.
+                        </p>
+                        <p>
+                            Our vision is to be a leading institution in holistic education, preparing students not just academically, but also socially and emotionally for the world ahead. We aim to cultivate a community where students are encouraged to explore their interests, develop critical thinking skills, and engage in meaningful discussions. By fostering a culture of respect and inclusivity, we ensure that every student feels valued and empowered to contribute positively to society. Our commitment to continuous improvement and innovation in teaching practices will help us adapt to the ever-changing educational landscape, ensuring that our students are well-equipped to face future challenges with confidence and resilience.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center lg:items-start gap-4">
+                        <img src={About1} alt="" className='w-full  lg:w-[400px] mb-4' />
+                        <img src={About2} alt="" className='w-full lg:w-[400px]' />
+                    </div>
                 </div>
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR VISION</h1>
-                <p className='font-bold text-xl'>To be a leading institution in holistic education</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
+                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
 
             <div className='w-full h-[150px] bg-[#325AAB] flex justify-evenly items-center mt-16'>
@@ -84,8 +86,8 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSION</h1>
-                <p className='font-bold text-xl'>Empowering students through quality education</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
+                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
 
             <div className='flex flex-wrap justify-evenly mt-16'>
