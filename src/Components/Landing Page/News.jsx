@@ -11,20 +11,20 @@ const News = () => {
     <div className="p-4" id='about'>
       <div className='text-center mb-8'>
         <h1 className='text-[#325AAB] font-extrabold text-2xl'>NEWS & ARTICLES</h1><br />
-        <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+        <p className='font-bold text-xl'>Stay updated with the latest news and articles from our community.</p>
       </div>
 
       <div className='flex flex-col md:flex-row justify-evenly mb-8 gap-8'>
         {images.map((image, index) => (
           <div key={index} className='flex flex-col items-center'>
-            <div className='w-full md:w-[420px] h-[250px] rounded-md overflow-hidden relative'>
-              <img src={image} alt="" className="object-cover w-full h-full" />
-            </div>
-            <div className='w-full md:w-[420px] h-[180px] bg-[#F1F3F8] rounded-lg p-4 mt-4 shadow-md transition-transform duration-300 hover:scale-105'>
-              <h2 className='text-2xl font-bold'>Seminaire Saint-Leon student ranks TOP 10 in National Exam.</h2><br />
-              <Link to={'/Articles'} className="w-full md:w-40 h-11 bg-[#325AAB] text-white font-semibold rounded-lg shadow-md flex justify-center items-center hover:bg-[#1e4a8d]">
-                <span className='flex gap-4 items-center'>Read more <FaArrowRight /></span>
-              </Link>
+            <div className='w-full md:w-[420px] rounded-md overflow-hidden relative transition-transform duration-300 hover:scale-105'>
+              <img src={image} alt="" className="object-cover w-full h-[250px]" />
+              <div className='h-[165px] bg-[#F1F3F8] rounded-lg p-4 mt-0 shadow-md'>
+                <h2 className='text-lg font-bold'>Latest Update: Seminaire Saint-Leon student ranks TOP 10 in National Exam.</h2><br />
+                <Link to={'/Articles'} className="w-full md:w-40 h-11 bg-[#325AAB] text-white font-semibold rounded-lg shadow-md flex justify-center items-center hover:bg-[#1e4a8d]">
+                  <span className='flex gap-4 items-center'>Read more <FaArrowRight /></span>
+                </Link>
+              </div>
             </div>
           </div>
         ))}
