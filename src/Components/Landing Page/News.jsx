@@ -2,6 +2,7 @@ import People from '../../assets/people.png'
 import { FaArrowRight } from "react-icons/fa";
 import Gang from '../../assets/newPics/gang.jpg'
 import joy from '../../assets/newPics/joy.jpg'
+import zigzag from '../../assets/Group 99.png'
 import { Link } from 'react-router-dom'
 
 const News = () => {
@@ -35,6 +36,10 @@ const News = () => {
         <p className='font-bold text-xl mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         <p>Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,<br /> ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,<br />
           varius a, semper congue, euismod non, mi.</p>
+      </div>
+
+      <div className='flex justify-center mb-8'>
+        <img src={zigzag} alt="" />
       </div>
 
       {[1, 2, 3, 4].map((num, index) => (
