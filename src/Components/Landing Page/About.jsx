@@ -1,6 +1,6 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import house from '../../assets/image.png'
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaBookOpen, FaUsers, FaHandsHelping } from "react-icons/fa";
 import About1 from '../../assets/newPics/sport.png';
 import About2 from '../../assets/about2.png'
 import { MdOutlineFlag } from 'react-icons/md'
@@ -62,8 +62,8 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
-                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR VALUES</h1>
+                <p className='font-bold text-xl'>We are committed to fostering a culture of excellence, integrity, and respect among our students.</p>
             </div>
 
             <div className='w-full h-[150px] bg-[#325AAB] flex justify-evenly items-center mt-16'>
@@ -86,30 +86,30 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
-                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSIONS</h1>
+                <p className='font-bold text-xl'>Guiding our students towards excellence, integrity, and respect.</p>
             </div>
 
             <div className='flex flex-wrap justify-evenly mt-16'>
-                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md mb-4'>
-                    <MdOutlineFlag className='text-6xl text-[#325AAB] mb-4' />
-                    <h1 className='text-2xl font-bold mb-4'>Mission</h1>
+                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md mb-4 transition-transform transform hover:scale-105 hover:shadow-lg'>
+                    <FaBookOpen className='text-6xl text-[#325AAB] mb-4' />
+                    <h1 className='text-2xl font-bold mb-4'>Commitment to Learning</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                        We are dedicated to fostering a love for learning, encouraging students to explore their interests and develop critical thinking skills.
                     </p>
                 </div>
-                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md mb-4'>
-                    <MdOutlineFlag className='text-6xl text-[#325AAB] mb-4' />
-                    <h1 className='text-2xl font-bold mb-4'>Mission</h1>
+                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md mb-4 transition-transform transform hover:scale-105 hover:shadow-lg'>
+                    <FaUsers className='text-6xl text-[#325AAB] mb-4' />
+                    <h1 className='text-2xl font-bold mb-4'>Building Community</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                        We promote collaboration and teamwork, creating a supportive environment where every student feels valued and included.
                     </p>
                 </div>
-                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md'>
-                    <MdOutlineFlag className='text-6xl text-[#325AAB] mb-4' />
-                    <h1 className='text-2xl font-bold mb-4'>Mission</h1>
+                <div className='w-full sm:w-[400px] h-[280px] bg-[#F1F3F8] p-4 rounded-md transition-transform transform hover:scale-105 hover:shadow-lg'>
+                    <FaHandsHelping className='text-6xl text-[#325AAB] mb-4' />
+                    <h1 className='text-2xl font-bold mb-4'>Service to Others</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                        We instill a sense of responsibility and service, encouraging students to give back to their communities and make a positive impact.
                     </p>
                 </div>
             </div><br /><br /><br />
