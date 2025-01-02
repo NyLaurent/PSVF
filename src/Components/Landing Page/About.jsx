@@ -1,11 +1,10 @@
-
 import { FaCircleCheck } from "react-icons/fa6";
-import house from '../../assets/house.png'
+import house from '../../assets/image.png'
 import { FaArrowRight } from "react-icons/fa";
 import About1 from '../../assets/newPics/sport.png';
 import About2 from '../../assets/about2.png'
 import { MdOutlineFlag } from 'react-icons/md'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -32,7 +31,7 @@ const About = () => {
                     </p><br /><br />
                     <p className='mb-8'>
                         With a dedicated faculty and modern facilities, Petit Seminare <br /> Saint Leon Kabgayi is a beacon of educational <br />
-                         quality, consistently producing well-rounded individuals <br />who excel in various fields.
+                        quality, consistently producing well-rounded individuals <br />who excel in various fields.
                     </p>
                     <Link to={'/History'} className=" px-4 py-2 cursor-pointer bg-[#325AAB] w-[200px] text-white font-semibold rounded-md shadow-md flex items-center gap-4  hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                         Read more <FaArrowRight />
@@ -42,16 +41,16 @@ const About = () => {
 
             <div className='flex flex-col lg:flex-row justify-evenly mt-16'>
                 <div className='lg:w-1/2 lg:pr-14 mb-8 lg:mb-0'>
-                    <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
-                    <h3 className='font-bold text-xl mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                    <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSION</h1>
+                    <h3 className='font-bold text-xl mb-4'>Empowering students through quality education</h3>
                     <p className='mb-4'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
-                    </p><br /><br />
+                        Our mission is to provide a nurturing environment that fosters academic excellence and personal growth, developing well-rounded individuals prepared for future challenges. We believe in character development alongside academic achievement, instilling values of integrity, respect, and responsibility. Through innovative teaching methods and a dedicated faculty, we inspire a love for learning and a commitment to lifelong education.
+                    </p>
                     <p className='mb-4'>
-                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-                    </p><br /><br />
+                        Our commitment extends beyond the classroom, engaging with the community to promote social responsibility and active citizenship. We offer diverse extracurricular activities that encourage teamwork, leadership, and personal development, ensuring every student finds their passion while fostering a culture of inclusivity and respect.
+                    </p>
                     <p>
-                        Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
+                        Our vision is to be a leading institution in holistic education, preparing students not just academically, but also socially and emotionally for the world ahead.
                     </p>
                 </div>
                 <div className="flex flex-col items-center lg:items-start gap-4">
@@ -61,8 +60,8 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
-                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR VISION</h1>
+                <p className='font-bold text-xl'>To be a leading institution in holistic education</p>
             </div>
 
             <div className='w-full h-[150px] bg-[#325AAB] flex justify-evenly items-center mt-16'>
@@ -85,8 +84,8 @@ const About = () => {
             </div>
 
             <div className='text-center mt-16'>
-                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>LOREM IPSUM</h1>
-                <p className='font-bold text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <h1 className='text-[#325AAB] font-extrabold text-2xl mb-4'>OUR MISSION</h1>
+                <p className='font-bold text-xl'>Empowering students through quality education</p>
             </div>
 
             <div className='flex flex-wrap justify-evenly mt-16'>

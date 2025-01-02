@@ -17,7 +17,7 @@ const Navbar = () => {
     const backgroundImages = [
         backgroundImage, 
         // secondImage, 
-        thirdImage, 
+        // thirdImage, 
         
     ];
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             <img src={backgroundImages[currentImageIndex]} alt="Background" className="w-full h-screen object-cover opacity-100" />
 
             {/* Shadow Overlay */}
-            <div className='absolute top-0 left-0 w-full h-screen bg-black opacity-50'></div>
+            <div className='absolute top-0 left-0 w-full h-screen'></div>
 
             {/* Content Overlay */}
             <div className='absolute top-0 flex items-center justify-center w-full h-screen text-white flex-col'>
