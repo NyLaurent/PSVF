@@ -1,4 +1,3 @@
-
 import logo from '../../assets/logo.png'
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 
@@ -14,19 +13,24 @@ const Footer = () => {
               <li><FaInstagram /></li>
               <li><FaFacebook /></li>
               <li><FaEnvelope /></li>
-              <li><FaInstagram /></li>
             </ul>
           </div>
-          {[1, 2, 3].map((num) => (
-            <div key={num} className='text-center md:text-left mb-4 md:mb-0'>
-              <h1 className='font-extrabold'>Lorem ipsum</h1>
-              <ul className='flex flex-col cursor-pointer'>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-            </div>
-          ))}
+          <div className='text-center md:text-left mb-4 md:mb-0'>
+            <h1 className='font-extrabold'>Contact Us</h1>
+            <ul className='flex flex-col cursor-pointer'>
+              <li>Email: saintleon@gmail.com.com</li>
+              <li>Phone: +250 794971311</li>
+              <li>Address: Muhanga, Rwanda</li>
+            </ul>
+          </div>
+          <div className='text-center md:text-left mb-4 md:mb-0'>
+            <h1 className='font-extrabold'>Quick Links</h1>
+            <ul className='flex flex-col cursor-pointer'>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Contact</li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>
