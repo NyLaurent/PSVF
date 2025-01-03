@@ -3,6 +3,7 @@ import { IoCalendarNumber } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import logo from '../../assets/logo.png'
+import Footer from '../Landing Page/Footer';
 import one from '../../assets/newPics/image.png'
 import joy from '../../assets/newPics/joy.jpg'
 import { Link } from 'react-router-dom'
@@ -47,47 +48,16 @@ const Articles = () => {
       <div className='flex flex-col flex-wrap md:flex-row justify-center md:justify-evenly'>
         <div className='w-full md:w-3/5 p-4'>
           <h1 className='text-3xl font-bold'>
-            Seminaire Saint-Leon student rank TOP 10 <br /> in National Exam.
+            Seminaire Saint-Leon student ranks in the TOP 10 in the National Exam.
           </h1>
-          <div className="w-full mt-4">
+          <div className="w-full mt-2">
             <p className="text-center sm:text-left leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-              semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-              molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-              Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-              Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-              Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-              Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+              Our students have demonstrated exceptional performance in the recent National Exam, showcasing their dedication and hard work. We are proud of their achievements and commitment to excellence. The Seminaire Saint-Leon community continues to thrive, with students actively participating in various extracurricular activities that enhance their learning experience and personal growth.
             </p>
           </div>
-          <br /><br />
-          <div className="flex mt-4">
+          <div className="flex mt-2">
             <p className="text-center sm:text-left leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-              semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-              molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-              Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-              Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-              Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-              Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-            </p>
-          </div>
-          <br /><br />
-          <div className="flex mt-4">
-            <p className="text-center sm:text-left leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-              ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-              semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-              molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-              Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-              Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-              Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-              Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+              We invite parents and guardians to join us for our upcoming open house, where you can learn more about our programs and meet our dedicated staff. Together, we can foster an environment of learning and growth for our students.
             </p>
           </div>
         </div>
@@ -98,15 +68,15 @@ const Articles = () => {
           </div>
           <br />
 
-          <div className='flex flex-col gap-6'>
+          <div className='flex flex-col gap-4'>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-              <div key={num} className='flex flex-row gap-2'>
+              <div key={num} className='flex flex-row gap-2 border-b border-gray-300 pb-2 hover:bg-gray-100 transition duration-200 p-2 rounded-md'>
                 <div className='flex-shrink-0'>
-                  <img src={gate} alt="" className='w-[120px] md:w-[180px] rounded-sm' />
+                  <img src={gate} alt="" className='w-[100px] md:w-[150px] rounded-md shadow-lg' />
                 </div>
                 <div className='flex-grow'>
-                  <p className='font-semibold pb-1'>Lorem ipsum dolor sit <br />amet,consectetur</p>
-                  <div className='flex gap-1 flex-row'>
+                  <p className='font-semibold text-md'> - Student Achievements</p>
+                  <div className='flex gap-1 flex-row text-gray-600 text-sm'>
                     <IoCalendarNumber /> March 2023
                   </div>
                 </div>
@@ -116,30 +86,9 @@ const Articles = () => {
         </div>
       </div>
 
-      <footer className='bg-[#325AAB] text-white font-light p-5 mt-10'>
-        <div className='flex flex-col md:flex-row justify-evenly items-center md:items-start'>
-          <div className='text-center md:text-left mb-4 md:mb-0'>
-            <img src={logo} alt="" className="mx-auto md:mx-0" />
-            <p className='text-[10px] mt-2'>PETIT SEMINAIRE <br /> SAINT-LEON DE KABGAYI</p>
-            <ul className='flex justify-center md:justify-start gap-4 mt-2'>
-              <li><FaInstagram /></li>
-              <li><FaFacebook /></li>
-              <li><FaEnvelope /></li>
-              <li><FaInstagram /></li>
-            </ul>
-          </div>
-          {[1, 2, 3].map((num) => (
-            <div key={num} className='text-center md:text-left mb-4 md:mb-0'>
-              <h1 className='font-extrabold'>Lorem ipsum</h1>
-              <ul className='flex flex-col cursor-pointer'>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-            </div>
-          ))}
-        </div>
-      </footer>
+      <div className="mb-8"></div>
+
+      <Footer></Footer>
     </div>
   )
 }
