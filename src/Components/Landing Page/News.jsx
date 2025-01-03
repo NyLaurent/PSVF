@@ -68,9 +68,9 @@ const News = () => {
         <NewsItem num={num} index={index} />
       ))}
 
-      <div className='text-center mb-8'>
-        <h1 className='text-[#325AAB] font-extrabold text-2xl'>NEWS & ARTICLES</h1><br />
-        <p className='font-bold text-2xl'>Lorem ipsum dolor sit amet, consectetur adipiscing eli <br /> Lorem ipsum dolor sit amet</p>
+      <div className='text-center mb-8 -mt-72'>
+        <h1 className='text-[#325AAB] font-extrabold text-2xl'>Stay Connected with Us</h1><br />
+        <p className='font-bold text-2xl'>Subscribe to our newsletter for the latest updates and news from our community! <br /> Fill out the form below to join our mailing list.</p>
       </div>
       <div id='pricing'>
         <form>
