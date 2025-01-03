@@ -2,9 +2,10 @@ import { BsArrowDownCircleFill } from 'react-icons/bs';
 import { FaInstagram, FaFacebook, FaEnvelope } from 'react-icons/fa';
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import gate from '../../assets/gate2.png';
-import Church from '../../assets/gate2.png'
+import Church from '../../assets/newPics/priest.jpg'
+import Footer from '../Landing Page/Footer';
 import logo from '../../assets/logo.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const History = () => {
@@ -16,11 +17,11 @@ const History = () => {
         </div>
         <div className="absolute top-4 left-4 text-white">
           <Link to={'/'}>
-          <FaLongArrowAltLeft className="text-3xl cursor-pointer" />
+            <FaLongArrowAltLeft className="text-3xl cursor-pointer" />
           </Link>
-         
+
         </div>
-       
+
         <div className="absolute top-[30%] right-[10%] sm:right-[15%] lg:right-[30%] text-center md:text-left">
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">
             History of <span className="font-extrabold text-5xl md:text-6xl lg:text-7xl text-fill-transparent text-stroke">Saint Leon</span>
@@ -37,80 +38,35 @@ const History = () => {
 
 
 
-          
+
           <span className=''> Saint-Leon</span>
         </h1>
       </div><br />
 
       <div className='flex flex-col'>
-      <div className="flex justify-center w-full px-4">
-    <p className="text-center sm:text-left max-w-4xl leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-      ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-      semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-      molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-      Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-      Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-      Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-      Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-    </p>
-  </div><br /><br />
-  
-        <div className='w-full flex justify-center'>
-          <img src={Church} alt="" className='max-w-full lg:w-[900px]' />
-        </div><br />
         <div className="flex justify-center w-full px-4">
-    <p className="text-center sm:text-left max-w-4xl leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-      ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-      semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-      molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-      Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-      Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-      Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-      Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-    </p>
-  </div><br /><br />
-  <div className="flex justify-center w-full px-4">
-    <p className="text-center sm:text-left max-w-4xl leading-relaxed">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-      ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
-      semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
-      molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper.
-      Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-      Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
-      Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante
-      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
-      Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-    </p>
-  </div><br /><br />
-      </div>
-      <footer className='bg-[#325AAB] text-white font-light p-5'>
-        <div className='flex flex-col md:flex-row justify-evenly items-center md:items-start'>
-          <div className='text-center md:text-left mb-4 md:mb-0'>
-            <img src={logo} alt="" className="mx-auto md:mx-0" />
-            <p className='text-[10px] mt-2'>PETIT SEMINAIRE <br /> SAINT-LEON DE KABGAYI</p>
-            <ul className='flex justify-center md:justify-start gap-4 mt-2'>
-              <li><FaInstagram /></li>
-              <li><FaFacebook /></li>
-              <li><FaEnvelope /></li>
-              <li><FaInstagram /></li>
-            </ul>
-          </div>
-          {[1, 2, 3].map((num) => (
-            <div key={num} className='text-center md:text-left mb-4 md:mb-0'>
-              <h1 className='font-extrabold'>Lorem ipsum</h1>
-              <ul className='flex flex-col cursor-pointer'>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-              </ul>
-            </div>
-          ))}
+          <p className="text-center sm:text-left max-w-4xl leading-relaxed">
+            The Saint Leon Seminary was established in 1890, with the mission of providing a comprehensive education to young men aspiring to serve in the clergy. Over the years, it has evolved into a center of excellence, fostering spiritual growth and academic achievement.
+          </p>
         </div>
-      </footer>
+        <div className='w-full flex justify-center'>
+          <img src={Church} alt="" className='max-w-full lg:w-[500px] h-[500px]' />
+        </div>
+        <div className="flex justify-center w-full px-4">
+          <p className="text-center sm:text-left max-w-4xl leading-relaxed">
+            Throughout its history, the seminary has adapted to the changing needs of the Church and society. It has produced numerous influential leaders who have made significant contributions to their communities and the broader Church.
+          </p>
+        </div>
+        <div className="flex justify-center w-full px-4">
+          <p className="text-center sm:text-left max-w-4xl leading-relaxed mb-8">
+            Today, the Saint Leon Seminary continues to uphold its commitment to excellence in education, providing a nurturing environment for the next generation of clergy. With a focus on both academic rigor and spiritual formation, it remains a beacon of hope and guidance for many.
+          </p>
+        </div>
+      </div>
+
+
+
+      <Footer></Footer>
     </div>
   )
 }
