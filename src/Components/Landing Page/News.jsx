@@ -8,6 +8,29 @@ import { Link } from 'react-router-dom'
 const News = () => {
   const images = [People, Gang, joy];
 
+  const NewsItem = ({ num, index }) => (
+    <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} justify-around items-center relative 
+      ${index === 0 ? 'bottom-[920px] left-32' : index === 1 ? 'left-40 bottom-[850px]' : index === 2 ? 'bottom-[790px] left-32' : 'bottom-[680px] left-40'} mb-8`}>
+      <div className='md:w-1/3 p-4'>
+        <h2 className='text-lg font-extrabold text-[#325AAB]'>
+          {index === 0 ? 'Community Garden Initiative Launched' :
+            index === 1 ? 'Local School Wins National Award' :
+              index === 2 ? 'Charity Run Raises $10,000 for Local Shelter' :
+                'New Park Opens in Downtown Area'}
+        </h2>
+        <p className='font-light'>
+          {index === 0 ? 'Join us in our new community garden project aimed at promoting sustainability and local food production.' :
+            index === 1 ? 'Our local school has been recognized for its outstanding educational programs and achievements in the national competition.' :
+              index === 2 ? 'Thanks to our generous community, we successfully raised funds to support the local shelter and its initiatives.' :
+                'The new park features walking trails, playgrounds, and picnic areas for families to enjoy.'}
+        </p>
+      </div>
+      <div className='md:w-1/4 text-center'>
+        <h1 className='text-8xl font-extrabold text-[#c4c7cf]'>{`0${num}`}</h1>
+      </div>
+    </div>
+  );
+
   return (
     <div className="p-4" id='about'>
       <div className='text-center mb-8'>
@@ -31,27 +54,18 @@ const News = () => {
         ))}
       </div>
 
-      <div className='text-center mb-8'>
-        <h1 className='text-[#325AAB] font-extrabold text-2xl'>LOREM IPSUM</h1><br />
-        <p className='font-bold text-xl mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
-        <p>Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,<br /> ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,<br />
-          varius a, semper congue, euismod non, mi.</p>
+      <div className='text-center mb-8 max-w-xl mx-auto'>
+        <h1 className='text-[#325AAB] font-extrabold text-2xl'>Community Spotlight</h1><br />
+        <p className='font-bold text-xl mb-4'>Celebrating Our Local Heroes</p>
+        <p>In our community, we are proud to highlight the incredible contributions of local individuals and organizations. From volunteers who dedicate their time to help those in need, to businesses that support local initiatives, their efforts make a significant impact. Join us in recognizing these heroes and their commitment to making our community a better place for everyone.</p>
       </div>
 
-      <div className='flex justify-center mb-8'>
-        <img src={zigzag} alt="" />
+      <div className='pl-[165px] mb-8 hidden md:block'>
+        <img src={zigzag} alt="" width={600} />
       </div>
 
       {[1, 2, 3, 4].map((num, index) => (
-        <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} justify-around items-center mb-8`}>
-          <div className='md:w-1/2 p-4'>
-            <h2 className='text-2xl font-bold text-[#325AAB]'>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing eli</h2>
-            <p className='font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Sed non risus. Suspendisse lectus tortor, dignissim sit amet,<br /> adipiscing nec, ultricies sed, dolo</p>
-          </div>
-          <div className='md:w-1/4 text-center'>
-            <h1 className='text-8xl font-extrabold text-[#c4c7cf]'>{`0${num}`}</h1>
-          </div>
-        </div>
+        <NewsItem num={num} index={index} />
       ))}
 
       <div className='text-center mb-8'>
